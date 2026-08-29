@@ -1,55 +1,48 @@
-# tenable-authenticated-vs-unauthenticated-assessment
-Comparative vulnerability assessment demonstrating the visibility differences between authenticated and unauthenticated Tenable scanning of a Windows 11 Azure VM.
 # Authenticated vs. Unauthenticated Vulnerability Assessment
 
 ## Project Overview
 
-This project compares authenticated and unauthenticated vulnerability
-assessments of a Windows 11 virtual machine hosted in Microsoft Azure
-using Tenable Vulnerability Management.
+This project evaluates the difference in vulnerability visibility between
+authenticated and unauthenticated vulnerability assessments of a Windows 11
+virtual machine in Microsoft Azure using Tenable Vulnerability Management.
 
-## Objective
+During testing, three scan states were observed:
 
-Evaluate how credentialed access affects vulnerability visibility and
-determine whether authenticated scanning identifies security exposures
-not detected through unauthenticated assessment.
+1. An unauthenticated assessment with no credentials provided.
+2. A credentialed scan attempt in which authentication failed.
+3. A successfully authenticated assessment using valid credentials.
 
-## Environment
+The project demonstrates the importance of validating credential status before
+interpreting vulnerability scan results.
 
-- Tenable Vulnerability Management
-- Microsoft Azure
-- Windows 11 Virtual Machine
 
-## Assessment Methodology
+## Assessment Results
 
-1. Configured the Windows 11 Azure VM as the assessment target.
-2. Performed an unauthenticated vulnerability assessment.
-3. Performed an authenticated vulnerability assessment using valid credentials.
-4. Compared findings from both assessments.
-5. Reviewed differences in vulnerability visibility and severity.
+| Assessment | Credential Status | Findings |
+|---|---|---:|
+| Unauthenticated | No credentials provided | 48 |
+| Failed credential attempt | Authentication failed | 48 |
+| Authenticated | Valid credentials provided | 80 |
 
-## Results
+Successful authenticated scanning identified 32 additional findings compared
+with the unauthenticated assessment, representing a 67% increase in finding
+visibility.
 
-| Assessment | Findings |
-|---|---:|
-| Unauthenticated | 48 |
-| Authenticated | 80 |
+The authenticated assessment also identified an additional High-severity
+Windows account configuration issue.
 
-Authenticated scanning identified 32 additional findings, representing
-a 67% increase in finding visibility.
 
-The credentialed assessment also identified an additional High-severity
-Windows account configuration issue that was not identified during the
-unauthenticated assessment.
+## Key Findings
 
-## Key Takeaway
+- Unauthenticated assessment identified 48 findings.
+- Providing credentials did not automatically result in successful authentication.
+- Credential status validation identified a failed authentication attempt.
+- Successful authenticated scanning identified 80 findings.
+- Authenticated scanning increased finding visibility by approximately 67%.
+- The authenticated assessment identified an additional High-severity Windows
+  account configuration issue.
+- Credentialed scanning provided additional host-level Windows information
+  unavailable through the unauthenticated assessment.
 
-The assessment demonstrated how authenticated scanning can provide
-deeper visibility into host-level configurations and vulnerabilities
-than unauthenticated network-based assessment alone.
 
-## Skills Demonstrated
-
-Tenable Vulnerability Management • Vulnerability Assessment •
-Credentialed Scanning • Finding Analysis • Risk Prioritization •
-Microsoft Azure
+  
