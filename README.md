@@ -25,6 +25,7 @@ visibility and the amount of host-level information available to the scanner.
 <img width="603" height="328" alt="august 28 (3)" src="https://github.com/user-attachments/assets/01faf2da-2772-4653-823e-049eadef0fc0" />
 
 
+| Assessment | Credential Status | Findings |
 |---|---|---:|
 | Authenticated | Valid credentials provided | 79 |
 
