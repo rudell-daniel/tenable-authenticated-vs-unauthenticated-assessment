@@ -24,6 +24,8 @@ visibility and the amount of host-level information available to the scanner.
 <img width="632" height="842" alt="august 28 (2)" src="https://github.com/user-attachments/assets/1f3c29d6-c600-42cc-b749-c459883a265d" />
 <img width="603" height="328" alt="august 28 (3)" src="https://github.com/user-attachments/assets/01faf2da-2772-4653-823e-049eadef0fc0" />
 
+
+
 | Authenticated | Valid credentials provided | 79 |
 <img width="608" height="845" alt="august 28" src="https://github.com/user-attachments/assets/d1d83ccd-18f0-49fe-9724-712197f981b9" />
 <img width="652" height="410" alt="august 28 (1)" src="https://github.com/user-attachments/assets/58d38bdb-6da9-4a68-82a0-03afcf85f04a" />
