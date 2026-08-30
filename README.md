@@ -27,6 +27,8 @@ visibility and the amount of host-level information available to the scanner.
 
 
 | Authenticated | Valid credentials provided | 79 |
+
+
 Authenticated scanning identified 33 additional findings, representing approximately a 72% increase in finding visibility.
 
 
