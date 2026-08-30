@@ -28,8 +28,10 @@ visibility and the amount of host-level information available to the scanner.
 | Assessment | Credential Status | Findings |
 |---|---|---:|
 | Authenticated | Valid credentials provided | 79 |
-<img width="652" height="410" alt="august 28 (1)" src="https://github.com/user-attachments/assets/a474abac-7135-4c74-af4e-553a6b6dadf6" />
-<img width="608" height="845" alt="august 28" src="https://github.com/user-attachments/assets/e054547f-2b45-4019-8e08-a90a73e40980" />
+<img width="608" height="845" alt="august 28" src="https://github.com/user-attachments/assets/e32518f4-d982-4ef8-bdd5-f64ea8ca8709" />
+<img width="652" height="410" alt="august 28 (1)" src="https://github.com/user-attachments/assets/6df0a83a-5395-4ca2-86b2-ad6109f19ba0" />
+
+
 
 
 Authenticated scanning identified 33 additional findings, representing approximately a 72% increase in finding visibility.
